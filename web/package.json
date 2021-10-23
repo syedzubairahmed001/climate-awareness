@@ -15,12 +15,15 @@
     "next-redux-wrapper": "^6.0.2",
     "react": "16.13.1",
     "react-dom": "16.13.1",
+    "react-feather": "^2.0.9",
     "react-ga": "^3.1.2",
     "react-ionicons": "^3.1.4",
+    "react-lottie": "^1.2.3",
     "react-redux": "^7.2.1",
     "react-to-pdf": "^0.0.14",
     "redux": "^4.0.5",
     "redux-thunk": "^2.3.0",
+    "sawo": "^1.0.1",
     "validator": "^13.1.17"
   }
 }

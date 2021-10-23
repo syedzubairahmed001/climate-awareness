@@ -15,7 +15,7 @@ const theme = createMuiTheme({
     borderRadius: "10px",
   },
   palette: {
-    type: "dark",
+    type: "light",
     // common: { black: "#000", white: "#fff" },
     // background: {
     //   paper: "#424242",
@@ -24,9 +24,9 @@ const theme = createMuiTheme({
     //   level1: "#212121"
     // },
     primary: {
-      main: "#e74c3c",
+      main: "#2ecc71",
       light: "rgb(235, 83, 66)",
-      dark: "#b43f32",
+      dark: "#27ae60",
     },
     secondary: {
       light: "rgba(0, 231, 162, 0.1)",
@@ -46,14 +46,14 @@ const theme = createMuiTheme({
     tonalOffset: 0.2,
     background: {
       paper: "#fff",
-      default: "#fff",
+      default: "#ddd",
     },
     common: {
       black: "#222",
       white: "#fff",
     },
     text: {
-      primary: "#333",
+      primary: "#444",
       secondary: "#555",
     },
   },
@@ -61,6 +61,7 @@ const theme = createMuiTheme({
     MuiAppBar: {
       positionFixed: {
         backgroundColor: "#f0f2f5",
+        boxShadow: "none",
       },
     },
     MuiTooltip: {

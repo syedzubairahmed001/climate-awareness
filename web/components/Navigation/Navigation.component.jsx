@@ -8,9 +8,10 @@ import {
   Box,
 } from "@material-ui/core";
 import { useDispatch } from "react-redux";
+import { Link } from "next/link";
 
 import AccountPopup from "../AccountPopup/AccountPopup.component";
-import { test } from "../../store/actions/user";
+import { setAuthModalToggle } from "../../store/actions/global";
 
 const useStyles = makeStyles((theme) => ({
   container: {
@@ -29,13 +30,20 @@ const Navigation = (props) => {
   const styles = useStyles();
   const dispatch = useDispatch();
 
-    return (
-    <AppBar position="static" className={styles.container}>
+  return (
+    <AppBar position="static" className={styles.container} elevation={0}>
       <Toolbar>
         <Box mr={1}>
-          <img src="/images/logo.svg" alt="logo" className={styles.logo} />
+          <img
+            src="/images/clicomm_logo.png"
+            alt="logo"
+            className={styles.logo}
+          />
         </Box>
-        <Typography variant="h6">ThatProtest</Typography>
+        <Typography variant="h6">
+          CliComm 
+        </Typography>
+
         <Box className={styles.sec1}></Box>
         <Button
           color="inherit"
@@ -43,12 +51,11 @@ const Navigation = (props) => {
           variant="contained"
           disableElevation
           onClick={() => {
-            dispatch(test()).then(res => console.log(res))
+            dispatch(setAuthModalToggle(true));
           }}
         >
-          test
+          Login
         </Button>
-        <AccountPopup />
       </Toolbar>
     </AppBar>
   );

@@ -1,12 +1,12 @@
 import Head from "next/head";
 
-import HomeScreen from "../containers/Home/Home";
+import EventsScreen from "../../containers/Events/Events.container";
 
 export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Climate Awareness Community</title>
+        <title>Events about Climate Awareness</title>
         <meta
           name="description"
           content="That Protest is an online cyber protesting platform created in covid
@@ -20,7 +20,7 @@ export default function Home() {
       </Head>
 
       <main>
-        <HomeScreen />
+        <EventsScreen />
       </main>
     </div>
   );

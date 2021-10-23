@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Climate Awareness Community</title>
+        <title>Climate Awareness</title>
         <meta
           name="description"
           content="That Protest is an online cyber protesting platform created in covid
