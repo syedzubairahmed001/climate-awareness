@@ -94,6 +94,9 @@ const Home = (props) => {
                 <Box mb={2}>
                   <Chip color="primary" label={i.location}></Chip>
                 </Box>
+                <Box mb={2}>
+                  <Chip label={i.date}></Chip>
+                </Box>
               </Box>
             </Paper>
           </Box>
