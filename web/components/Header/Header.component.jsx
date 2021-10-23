@@ -16,7 +16,7 @@ const Header = (props) => {
     <Box p={10} mx={3} mt={1} textAlign="center" className={styles.container}>
       <Box mb={2}>
         <Typography variant="h3" align="center" style={{ fontWeight: "bold" }}>
-          Let's not look for a change, Let's be the change
+          Don't look for a change, be the change
         </Typography>
       </Box>
       <Box mb={2}>
